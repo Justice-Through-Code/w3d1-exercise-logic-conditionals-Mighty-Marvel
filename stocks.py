@@ -22,23 +22,26 @@ def stock_purchases():
 
     # 1.4 TODO: Use `if/elif/else` conditional logic to determine how much stock the client can buy,
     # and save it in a variable
-    if stock_name == "amazon":
+    if stock_name == "Amazon":
         shares = invest // amazon
-        print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${amazon}.')
-    elif stock_name == "apple":
+        print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${amazon}.') 
+    elif stock_name == "Apple":
         shares = invest // apple
-        print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${apple}.')
-    elif stock_name == "facebook":
+        print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${apple}.') 
+    elif stock_name == "Facebook":
         shares = invest // fb    
-        print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${fb}.')
-    elif stock_name == "google":
+        print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${fb}.') 
+    elif stock_name == "Google":
         shares = invest // google    
-        print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${google}.')
-    elif stock_name == "microsoft":
+        print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${google}.')     
+    else:
+        stock_name == "Microsoft"
         shares = invest // msft
+        
+    
         print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${msft}.') 
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
 
-
+# stock_purchases()

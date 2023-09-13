@@ -23,7 +23,7 @@ def snippet_2():
     if z < x:
         print("z is less than x")
 
-    elif z > x and z < y:
+    elif x < z < y:
         print("z is between x and y")
 
     else:
@@ -59,7 +59,7 @@ def snippet_5():
     m = "GOAT"
     n = "goat"
 
-    o = (m < n)
+    o = (m < n. lower())
 
     print (f"The value of o ({o}) is True since Python is case-sensitive.")
     assert(o == True)  # <-- DO NOT EDIT THIS LINE
